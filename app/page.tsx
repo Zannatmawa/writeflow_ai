@@ -1,8 +1,12 @@
 import Image from "next/image";
+import Navbar from './components/shared/Navbar'
+import Footer from './components/shared/Footer'
 
 export default function Home() {
   return (
     <div>
+      <Navbar />
+
       <main className="p-10">
         <h1 className="text-4xl font-bold">
           WriteFlow AI
@@ -12,6 +16,7 @@ export default function Home() {
           AI-powered content platform
         </p>
       </main>
+      <Footer />
     </div>
   );
 }
