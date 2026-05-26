@@ -1,9 +1,13 @@
-import React from 'react'
-
-const layout = () => {
+export default function DashboardLayout({
+    children,
+}: {
+    children: React.ReactNode;
+}) {
     return (
-        <div>layout</div>
-    )
-}
+        <div className="flex">
+            <aside>Sidebar</aside>
 
-export default layout
+            <main>{children}</main>
+        </div>
+    );
+}
